@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubicación en Tiempo Real</title>
+    <title>proyMap</title>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
@@ -11,7 +11,7 @@
             --bg: #0f0f1a;
             --panel: #1a1a2e;
             --border: rgba(255,255,255,0.15);
-            --accent: #00ffaa;
+            --accent: #a200ff;
             --accent2: #ff4d6d;
             --accent3: #7b2cbf;
             --text: #ffffff;
@@ -32,7 +32,7 @@
             flex-direction: column;
         }
 
-        /* Header */
+
         #header {
             position: absolute;
             top: 0; left: 0; right: 0;
@@ -58,7 +58,7 @@
 
         #header h1 span {
             color: var(--accent);
-            background: linear-gradient(45deg, var(--accent), #4dffb5);
+            background: linear-gradient(45deg, var(--accent), #3d2fd5);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-shadow: 0 0 20px rgba(0, 255, 170, 0.5);
@@ -244,12 +244,12 @@
     <div id="map"></div>
 
     <div id="panel">
-        <div class="panel-label"> Latitud</div>
+        <div class="panel-label">Latitud</div>
         <div class="panel-value" id="lat-val"><span>—</span></div>
-        <div class="panel-label"> Longitud</div>
+        <div class="panel-label">Longitud</div>
         <div class="panel-value" id="lng-val"><span>—</span></div>
         <div id="divider"></div>
-        <div class="panel-label"> Última actualización</div>
+        <div class="panel-label">Última actualización</div>
         <div class="panel-value" id="hora-val"><span>—</span></div>
     </div>
 
@@ -330,5 +330,4 @@
         });
     </script>
 </body>
-
 </html>
